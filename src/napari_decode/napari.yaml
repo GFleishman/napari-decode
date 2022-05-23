@@ -1,0 +1,4 @@
+name: napari-decode
+display_name: DECODE
+contributions:
+  commands:    
