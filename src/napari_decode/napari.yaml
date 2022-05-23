@@ -1,4 +1,11 @@
 name: napari-decode
 display_name: DECODE
 contributions:
-  commands:    
+  commands:
+    - id: napari-decode.simulate
+      title: Simulate SMLM data
+      python_name: napari_decode.simulation.widgets:simulate
+  widgets:
+    - command: napari-decode.simulate
+      display_name: DECODE Simulate
+      autogenerate: true
