@@ -4,14 +4,17 @@ contributions:
   commands:
     - id: napari-decode.parameters
       title: Set DECODE parameters
-      python_name: napari_decode.view:parameters
+      python_name: napari_decode.view:ParametersWidget
     - id: napari-decode.simulate
       title: Simulate a SMLM dataset
       python_name: napari_decode.view:simulate
+    - id: napari-decode.train
+      title: Train a DECODE network
+      python_name: napari_decode.view:train
   widgets:
     - command: napari-decode.parameters
       display_name: DECODE - parameters
-      autogenerate: true
     - command: napari-decode.simulate
       display_name: DECODE - simulate
-      autogenerate: true
+    - command: napari-decode.train
+      display_name: DECODE - train
